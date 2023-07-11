@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Add-Product</title>
+  <!-- tittle logo link  -->
+  <link rel="icon" href="./images/logox.png" type="image/png">
+  <!-- connect to stylesheet -->
+ <link rel="stylesheet" href="index.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <!-- import links  -->
+   <script src="https://kit.fontawesome.com/e7ec6a90f0.js" crossorigin="anonymous"></script>
+   <!-- import links  -->
+</head>
+<body>
+  <!-- Add the navigation bar -->
+ <section class="navigation-bar">
+    <nav class="navbar navbar-expand-lg navbar-light " id="nav-head">
+        <div class="container">
+          <img src="./images/icon-menu.svg" id="nav-menu" alt="">
+          <!-- home page logo -->
+          <img src="./images/logox.png" id="logo" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mid-nav" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+               <!-- nav-bar items  -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">collection</a>
+              </li>
+              <!-- nav-bar items  -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+            </ul>
+          <!-- nav-bar items ending  -->
+          <!-- ADMIN VIEW  -->
+          <div class="write">
+            <img src="./images/edit-s.png" id="write" onclick="authorizeAndRedirect()">
+            <b>Edit/Delete</b>
+          </div>
+
+            <!--user account profile avatar image  -->
+            <!-- <div class="avatar"><img src="./images/profile.jpg" id="avatar1" ></div>  -->
+            <!-- back to front end page button  -->
+            <div class="button back"><button onclick="window.location.href = 'index.html';">BACK</button></div>
+          </div>
+        </div>
+        
+        <!-- top under line  -->
+      </nav><hr class="under-line">
+ </section>
+
+  <!-- Add the main content section -->
+  <div class="container">
+    <section class="add_items">
+      <!-- add product heading  -->
+      <div class="add-product-header"> <h1>ADD PRODUCTS HERE</h1></div>
+      <!-- div-add a new product cards  -->
+      <div class="add-product-cards">
+        <div class="add-product-card">
+          <h2 class="product-title">Product Title</h2>
+          <input type="text" class="product-title-input" placeholder="Enter product title">
+          
+          <p class="product-description">Product Description</p>
+          <textarea class="product-description-input" placeholder="Enter product description"></textarea>
+          
+          <p class="product-price">Product Price</p>
+          <input type="text" class="product-price-input" placeholder="Enter product price">
+          
+          <input type="file" class="add-file-button">
+          <button class="add-product-button">Add Product</button>
+        </div>
+        <!-- product2  -->
+        <div class="add-product-card">
+          <h2 class="product-title">Product Title</h2>
+          <input type="text" class="product-title-input" placeholder="Enter product title">
+          
+          <p class="product-description">Product Description</p>
+          <textarea class="product-description-input" placeholder="Enter product description"></textarea>
+          
+          <p class="product-price">Product Price</p>
+          <input type="text" class="product-price-input" placeholder="Enter product price">
+          
+          <input type="file" class="add-file-button">
+          <button class="add-product-button">Add Product</button>
+        </div>
+      </div>
+
+  </div>
+ 
+
+ </section>
+ <div class="container">
+  <div class="product-page hidden">
+      <div class="edit-credit-page">
+        <div class="product-page">
+          <!-- h2 heading of edit/delete part  -->
+          <h2 class="page-title">Edit/Delete</h2>
+          
+          <table class="product-table">
+            <thead>
+              <!-- column header  -->
+              <tr>
+                <th>Serial Number</th>
+                <th>Product Name</th>
+                <th>Product Description</th>
+                <th>Product Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- table area 1  -->
+                <td>1</td>
+                <td><input type="text" class="product-name" placeholder="Enter product name"></td>
+                <td><textarea class="product-description" placeholder="Enter product description"></textarea></td>
+                <td><input type="text" class="product-price" placeholder="Enter product price"></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <!-- table area 2  -->
+                <td>2</td>
+                <td><input type="text" class="product-name" placeholder="Enter product name"></td>
+                <td><textarea class="product-description" placeholder="Enter product description"></textarea></td>
+                <td><input type="text" class="product-price" placeholder="Enter product price"></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <!-- table area 3  -->
+                <td>3</td>
+                <td><input type="text" class="product-name" placeholder="Enter product name"></td>
+                <td><textarea class="product-description" placeholder="Enter product description"></textarea></td>
+                <td><input type="text" class="product-price" placeholder="Enter product price"></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <!-- table area 4  -->
+                <td>4</td>
+                <td><input type="text" class="product-name" placeholder="Enter product name"></td>
+                <td><textarea class="product-description" placeholder="Enter product description"></textarea></td>
+                <td><input type="text" class="product-price" placeholder="Enter product price"></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+           <!-- save changes button  -->
+          <button class="save-changes-button">Save Changes</button>
+        </div>
+        
+        
+      </div>
+  <d/iv>
+ </div>
+
+  <!-- footer code -->
+  <!-- Footer -->
+ <div class="container">
+  <section class="footer">
+    <div class="footer1">
+      <div class="box-container">
+        <div class="box">
+            <div class="h3"><img src="./images/logox.png" class="logo" alt=""><h3>SNEAKER-CHOISE LTD</h3></div>
+            
+             <div class="p"> <p>Follow our social media platforms and be the first to Experience every New sneaker shoe.</p></div>
+             
+                 <div class="share">
+                    <div class="icon"><a href="#" class="fab fa-twitter"></a></div>
+                    <div class="icon"><a href="#" class="fab fa-facebook"></a></div>
+                    <div class="icon"><a href="#" class="fab fa-instagram"></a></div>
+                    <div class="icon"><a href="#" class="fab fa-linkedin"></a></div>
+                 </div>
+        </div>
+  
+        <div class="box">
+            <div class="h3"><h3>Contact Info</h3></div>
+            <a href="#" class="links"> <i class="fas fa-phone"></i>&nbsp;+254 115256304</a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i>&nbsp;+254 713690194</a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i>&nbsp;7318simon@gmail.com</a>
+            <a href="#" class="links"> <i class="fas fa-map-marker"></i>&nbsp;Nyeri, Kenya</a>
+  
+        </div>
+        
+        <div class="box">
+            <div class="h3"><h3>Quick Links</h3></div>
+            <a href="#collection" class="links"> <i class="fa fa-arrow-right"></i> COLLECTION</a>
+            <a href="#men" class="links"> <i class="fa fa-arrow-right"></i> MEN</a>
+            <a href="#women" class="links"> <i class="fa fa-arrow-right"></i> WOMEN</a>
+            <a href="#about" class="links"> <i class="fa fa-arrow-right"></i> ABOUT-US</a>
+            <a href="#contact" class="links"> <i class="fa fa-arrow-right"></i> CONTACT</a>
+        </div>
+  
+        <div class="box">
+            <div class="h3"><h3>Newsletter</h3></div>
+  
+            <div class="p-s"><p>Subscribe For latest Update</p></div>
+            
+            <div class="news"> <input type="email" placeholder="Enter Email" class="email">
+                <input type="submit" value="Subscribe" class="btn-s"></div>
+           
+        </div>
+        
+    </div>
+     <!-- footer copyright   -->
+    <div class="copyright">
+      <span class="footer__company-hero">
+          <b>&copy; 2023 SNEAKER-CHOISE LTD</b>
+      </span>
+    </div>  
+
+  </div>
+
+
+</section>
+ </div>
+
+          <!-- End of footer -->
+ 
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
